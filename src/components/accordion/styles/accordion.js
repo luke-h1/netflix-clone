@@ -39,9 +39,10 @@ export const Title = styled.h1`
 
 export const Item = styled.div`
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 10px; 
+  margin: auto;
   max-width: 670px;
-
+  width: 100%;
   &::first-of-type {
     margin-top: 3em;
   }
