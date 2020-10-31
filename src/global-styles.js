@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
@@ -11,6 +12,4 @@ html,body {
   font-size: 16px;
   
 }
-
-
 `;

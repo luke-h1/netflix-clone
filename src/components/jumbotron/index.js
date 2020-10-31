@@ -1,22 +1,11 @@
+/* eslint-disable  */
 import React from 'react';
-import {
-  Inner,
-  Container,
-  Pane,
-  Title,
-  SubTitle,
-  Item,
-  Image,
-} from './styles/jumbotron';
+import { Inner, Container, Pane, Title, SubTitle, Item, Image } from './styles/jumbotron';
 
-export default function Jumbotron({
-  children,
-  direction = 'row',
-  ...restProps
-}) {
+export default function Jumbotron({ children, direction = 'row', ...restProps }) {
   return (
-    <Item direction={direction}>
-      <Inner>{children}</Inner>
+    <Item {...restProps}>
+      <Inner direction={direction}>{children}</Inner>
     </Item>
   );
 }
